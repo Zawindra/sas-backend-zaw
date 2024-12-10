@@ -2,17 +2,21 @@ POST http://localhost:6000/products
 Content-Type: application/json
 
 {
-    "nameProduct":"Nasi Pecel",
-    "categories":"Makanan",
-    "madeIn":"Madiun"
+    "nameProduct":"lumpia basah",
+    "categories":"cemilan",
+    "madeIn":"semarang"
 }
 ###
-DELETE http://localhost:6000/products/63c16a8124a11fc0dc1a5915
+DELETE http://localhost:6000/products/6756b48cb2510dce90244e94
 ###
 
-PATCH http://localhost:6000/products/63c16b0f24a11fc0dc1a591a
+PATCH http://localhost:6000/products/6756b4aeb2510dce90244e96
 Content-Type: application/json
 
 {
+    "categories":"cemilan",
     "madeIn":"Semarang"
 }
+
+###
+GET http://localhost:6000/products

@@ -4,11 +4,12 @@ import cors from 'cors'
 import ProductRoute from './router/ProductRouter.js'
 
 const app = express();
+const uri = "mongodb+srv://zawindra:zaw123@cluster0.z827d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // mongoose.connect("mongodb://localhost:27017/fullstack_db", {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 // });
-mongoose.connect("mongodb://localhost:27017/restful_db", {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
